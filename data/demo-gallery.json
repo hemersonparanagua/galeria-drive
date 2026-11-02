@@ -1,0 +1,10 @@
+{
+  "slug": "galeria-exemplo",
+  "kind": "delivery",
+  "title": "Prévia da galeria",
+  "description": "Adicione fotos pelo painel para criar uma galeria para seu cliente.",
+  "sessionLabel": "SESSÃO FOTOGRÁFICA",
+  "photoSectionTitle": "Fotos",
+  "photos": [],
+  "folderUrl": ""
+}

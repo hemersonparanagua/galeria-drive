@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fbfaf8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Galeria — Hemerson Paranaguá</title>
+  <link rel="preconnect" href="https://lh3.googleusercontent.com" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span>Hemerson Paranaguá</span><small>Fotografia</small></a><span class="topbar-note">Galeria de cliente</span></header>
+  <main id="app">
+    <section class="hero" id="hero"><img class="hero-image" id="cover" alt="" /><div class="hero-shade"></div><div class="hero-copy"><p class="eyebrow" id="eyebrow">ACESSO PELO LINK</p><h1 id="title">Carregando galeria</h1><p id="description" class="hero-description"></p><a class="button" href="#fotos">Ver galeria <span aria-hidden="true">↓</span></a></div></section>
+    <section class="gallery-section" id="fotos"><div class="section-heading"><div><p class="eyebrow" id="client-label">SESSÃO FOTOGRÁFICA</p><h2 id="section-title">Fotos</h2></div><div class="gallery-actions"><span id="photo-count"></span><a id="download-all" target="_blank" rel="noopener">Abrir fotos no Drive ↗</a></div></div><div class="photo-grid" id="photo-grid"></div></section>
+  </main>
+  <footer><span>Hemerson Paranaguá</span><span>Fotografia com intenção.</span></footer>
+  <dialog id="lightbox" aria-label="Visualização da foto"><button class="lightbox-close" id="lightbox-close" aria-label="Fechar">×</button><button class="lightbox-arrow prev" id="prev" aria-label="Foto anterior">‹</button><img id="lightbox-image" alt="" /><button class="lightbox-arrow next" id="next" aria-label="Próxima foto">›</button><p id="lightbox-caption"></p></dialog>
+  <script src="src/app.js" defer></script>
+</body>
+</html>

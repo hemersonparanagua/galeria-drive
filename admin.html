@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#fbfaf8"/><meta name="robots" content="noindex,nofollow"/><title>CMS de galerias — Hemerson Paranaguá</title><link rel="stylesheet" href="src/styles.css"/><link rel="stylesheet" href="src/admin.css"/></head>
+<body class="admin-page"><header class="topbar"><a class="brand" href="./"><span>Hemerson Paranaguá</span><small>Galerias • painel</small></a><a class="admin-back" href="./">Ver galeria ↗</a></header>
+<main class="admin-shell"><section class="admin-intro"><p class="eyebrow">PAINEL DO FOTÓGRAFO</p><h1>Suas galerias</h1><p>Crie links de galeria para seus clientes e acompanhe os links salvos neste navegador.</p></section>
+<div class="notice"><strong>Modo inicial:</strong> o catálogo fica salvo neste navegador. Os links de cliente carregam os dados da galeria no próprio endereço e podem ser abertos em qualquer aparelho. Para sincronizar o catálogo do CMS entre aparelhos, será necessário conectar uma base persistente depois.</div>
+<section class="admin-layout"><div class="gallery-list-panel"><div class="panel-heading"><h2>Galerias cadastradas</h2><button class="button dark" id="new-gallery">+ Nova galeria</button></div><div id="gallery-list" class="gallery-list"></div></div>
+<form class="editor-panel" id="editor"><div class="panel-heading"><div><p class="eyebrow">EDITOR</p><h2 id="form-heading">Nova galeria</h2></div><button type="button" class="text-button" id="cancel-edit">Cancelar</button></div>
+<label>Nome da galeria<input required name="title" placeholder="Ex.: Ensaio da Marina" maxlength="90"/></label>
+<label>Identificação da sessão<input name="sessionLabel" placeholder="Ex.: RETRATO • CAJATI, SP" maxlength="80"/></label>
+<label>Mensagem para o cliente<textarea name="description" rows="3" placeholder="Uma frase curta sobre a sessão"></textarea></label>
+<label>Link da pasta no Google Drive<input name="folderUrl" type="url" placeholder="https://drive.google.com/drive/folders/…"/></label>
+<p class="field-hint">Pasta atual: 11 fotos já carregadas. Para outra pasta, cole os IDs de arquivo abaixo; a leitura automática de novas pastas será ligada na próxima etapa via Drive API.</p>
+<label>IDs das fotos<input name="photoIds" required placeholder="Um ID do Drive por linha"/></label>
+<label>Capa (ID de arquivo)<input name="coverId" placeholder="Deixe vazio para usar a primeira foto"/></label>
+<label>Tipo de galeria<select name="kind"><option value="delivery">Entrega final</option><option value="selection">Seleção de fotos</option></select></label>
+<div class="form-actions"><button class="button dark" type="submit">Salvar e gerar link</button><button class="button light" type="button" id="import-default">Carregar as 11 fotos do Drive</button></div><p class="save-feedback" id="save-feedback" aria-live="polite"></p></form></section>
+<footer class="admin-footer"><span>Hemerson Paranaguá</span><span>Catálogo local • fotos servidas pelo Google Drive</span></footer></main><script src="src/admin.js" defer></script></body></html>
